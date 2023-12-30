@@ -17,6 +17,7 @@
   "dependencies": {
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1528.0",
+    "stripe": "^14.10.0",
     "uuid": "^9.0.1"
   }
 }
