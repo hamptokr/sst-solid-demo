@@ -1,4 +1,4 @@
-import { useLocation } from "@solidjs/router";
+import { A, useLocation } from "@solidjs/router";
 
 export default function Nav() {
   const location = useLocation();
@@ -15,12 +15,24 @@ export default function Nav() {
             <img class="h-8 w-auto" src="scratch-icon.png" alt="Scratch" />
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <a
-              href="#"
+            <A
+              href="/"
               class={`inline-flex items-center border-b-2 ${active("/")}`}
             >
               Home
-            </a>
+            </A>
+            <A
+              href="/login"
+              class={`inline-flex items-center border-b-2 ${active("/login")}`}
+            >
+              Login
+            </A>
+            <A
+              href="/signup"
+              class={`inline-flex items-center border-b-2 ${active("/signup")}`}
+            >
+              Signup
+            </A>
           </div>
         </div>
       </div>
